@@ -157,6 +157,7 @@ function PageContent() {
                       onChange={(e) => setCompanyName(e.target.value)}
                       className="w-full p-2 border rounded focus:outline-none focus:ring-2 focus:ring-ml-blue"
                       required
+                      autoComplete="off"
                     />
                   </div>
 
@@ -173,6 +174,7 @@ function PageContent() {
                       value={cnpj}
                       onChange={handleCnpjChange}
                       placeholder="CNPJ da sua empresa"
+                      autoComplete="off"
                       className="w-full p-2 border rounded focus:outline-none focus:ring-2 focus:ring-ml-blue"
                       required
                     />

@@ -68,7 +68,7 @@ class MercadoLivreService {
   async createAccount(data) {
     const body = {
       id: uuidv4(),
-      id_tenant: data.user_id ? data.user_id : uuidv4(),
+      id_tenant: String(data.user_id) ? String(data.user_id) : uuidv4(),
       access_token: data.access_token,
       refresh_token: data.refresh_token,
       expires_in: 20600,
