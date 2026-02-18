@@ -1,6 +1,9 @@
 [build]
 nixPkgs = ["nodejs_20", "pkg-config"]
 
+[variables]
+TAILWIND_DISABLE_OXIDE = "1"
+
 [phases.setup]
 aptPkgs = ["build-essential", "python3"]
 
