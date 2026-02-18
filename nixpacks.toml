@@ -1,5 +1,5 @@
 [build]
-nixPkgs = ["nodejs_20", "pkg-config"]
+nixPkgs = ["nodejs_22", "pkg-config"]
 
 [variables]
 TAILWIND_DISABLE_OXIDE = "1"
