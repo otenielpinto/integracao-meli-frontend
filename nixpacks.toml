@@ -3,3 +3,6 @@ nixPkgs = ["nodejs_20", "pkg-config"]
 
 [phases.setup]
 aptPkgs = ["build-essential", "python3"]
+
+[phases.install]
+cmds = ["npm cache clean --force", "npm ci"]
